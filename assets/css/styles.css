@@ -159,6 +159,7 @@ img{
     cursor: pointer;
 }
 
+
 /*=== Show menu ===*/
 .show{
     right: 0;
@@ -306,12 +307,13 @@ img{
 .portfolio__img:hover .portfolio__link{
     bottom: 0;
 }
+
 .portfolio__link-name{
     color: var(--dark-color);
 }
 
-/* ===== CONTACT =====*/
-.contact__container{
+/* ===== CONTACT ===== */
+/* .contact__container{
     row-gap: 2rem;
 }
 .contact__subtitle{
@@ -349,8 +351,16 @@ img{
     cursor: pointer;
 }
 
+.contact__button:hover{
+    background-color: #FAFAFF;
+}
+#qrcode{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+} */
 /* ===== FOOTER=====*/
-.footer{
+/* .footer{
     background-color: var(--dark-color);
 }
 .footer__container{
@@ -373,7 +383,7 @@ img{
 }
 .footer__social:hover{
     color: var(--first-color);
-}
+} */
 
 /* ===== MEDIA QUERIES =====*/
 /* For small devices */

@@ -9,6 +9,7 @@
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
 
         <title>Project</title>
     </head>
@@ -75,7 +76,7 @@
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Information/Examples</h2>
+                <h2 class="section-title">Information</h2>
 
                 <div class="skills__container bd-grid">
                     <div class="skills__box">
@@ -101,17 +102,27 @@
 
             <!--===== PORTFOLIO =====-->
             <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Importance</h2>
+                <h2 class="section-title">Examples</h2>
 
                 <div class="portfolio__container bd-grid">
                     <div class="portfolio__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                        <img src="assets/img/Example1.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <!-- path to file = html 
+                                title = title of the image
+                            -->
+                            <a href="/assets/img/The_dress_blueblackwhitegold (2).jpeg" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Something">This is an image of a picture of a dress that went viral in 2015. Some saw the dress as blue with black lace, while others saw it as white with gold lace. Within a week, there were over 10 million tweets mentioning the dress and it quickly became a meme that divided many.</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/536676_022715-ktrk-dress-color-debate-img (1).jpeg" alt="">
 
                         <div class="portfolio__link">
                             <a href="#" class="portfolio__link-name">View details</a>
                         </div>
                     </div>
-                    <div class="portfolio__img">
+                    <!-- <div class="portfolio__img">
                         <img src="assets/img/work2.jpg" alt="">
 
                         <div class="portfolio__link">
@@ -145,39 +156,23 @@
                         <div class="portfolio__link">
                             <a href="#" class="portfolio__link-name">View details</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
-            <!--===== CONTACT =====-->
+            <!-- ===== CONTACT =====
             <section class="contact section" id="contact">
-                <h2 class="section-title">Activity</h2>
-
+                <h2 class="section-title">-</h2>
+            
                 <div class="contact__container bd-grid">
                     <div class="contact__info">
-                        <h3 class="contact__subtitle">QR CODE</h3>
-                        <span class="contact__text">info.mail.com</span>
-
-                        <h3 class="contact__subtitle">SURVERY MAYBE</h3>
-                        <span class="contact__text">+20 999-999</span>
-
-                        <h3 class="contact__subtitle">Something else</h3>
-                        <span class="contact__text">Something else</span>
+                        <div id="qrcode" class="contact__qrcode">
+                            <img id="qr_image" src="/assets/img/qrcode.png" alt="QR Code">
+                        </div>                        
                     </div>
-
-                    <!-- <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
-
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Enviar" class="contact__button">
-                    </form> -->
                 </div>
-            </section>
-        </main>
+            </section>                              
+        </main> -->
 
         <!--===== FOOTER =====-->
         <!-- <footer class="footer section">
@@ -214,5 +209,15 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script src="assets/vendor/jquery/jquery.min.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+        <script src="assets/vendor/counterup/counterup.min.js"></script>
+        <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/venobox/venobox.min.js"></script>
+        <script src="assets/vendor/typed.js/typed.min.js"></script>
     </body>
 </html>

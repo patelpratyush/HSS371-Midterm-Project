@@ -41,6 +41,34 @@ function scrollActive(){
     })
 }
 
+
+window.addEventListener('load', function() {
+    var portfolioIsotope = document.querySelector('.portfolio-container');
+    var iso = new Isotope(portfolioIsotope, {
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+    });
+
+    var portfolioFilters = document.querySelectorAll('#portfolio-flters li');
+
+    portfolioFilters.forEach(function(filter) {
+        filter.addEventListener('click', function() {
+            portfolioFilters.forEach(function(item) {
+                item.classList.remove('filter-active');
+            });
+            this.classList.add('filter-active');
+
+            var filterValue = this.getAttribute('data-filter');
+            iso.arrange({ filter: filterValue });
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Venobox
+    $('.venobox').venobox();
+});
+
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -74,7 +102,5 @@ sr.reveal('.contact__subtitle', {})
 sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
-
-
 
 
