@@ -1,7 +1,7 @@
 import qrcode
 
 # URL to encode into QR code
-website_url = "https://app.supermeme.ai/text-to-meme"
+website_url = "https://drive.google.com/file/d/1MI4RrxuGoTgIzaf1m5V1xxlUvk_OlINa/view?usp=sharing"
 
 # Generate QR code
 qr = qrcode.QRCode(
