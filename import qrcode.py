@@ -1,7 +1,7 @@
 import qrcode
 
 # URL to encode into QR code
-website_url = "hssmidterm.vercel.app"
+website_url = "https://hssmidterm.vercel.app"
 
 # Generate QR code
 qr = qrcode.QRCode(
@@ -17,6 +17,6 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white")
 
 # Save the image
-img.save("website_qr_code.png")
+img.save("websiteqrcode.png")
 
 print("QR Code generated successfully!")
